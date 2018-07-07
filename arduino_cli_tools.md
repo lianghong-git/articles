@@ -7,7 +7,6 @@ vim Makefile
 `ARDUINO_LIBS = Ethernet SPI  
 BOARD_TAG = uno  
 MONITOR_PORT = /dev/ttyACM0  
-
 include	/usr/share/arduino/Arduino.mk`  
 make  
 make upload  
