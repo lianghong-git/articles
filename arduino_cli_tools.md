@@ -1,5 +1,5 @@
 # arduino_mk的使用方法
-sudo apt-get install arduino arduino-mk
+sudo apt-get install arduino arduino-mk  
 mkdir blink_test
 cd blink_test
 cp /usr/share/doc/arduino-core/examples/01.Basics/Blink/Blink.ino
