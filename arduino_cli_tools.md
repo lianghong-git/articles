@@ -13,9 +13,3 @@ include	/usr/share/arduino/Arduino.mk
 ```
 `make`  
 `make upload`  
-> yinyong  
-> ssssss  
-> sssswww  
-> ddddddd  
->> ssdccccc
->> cccsss
