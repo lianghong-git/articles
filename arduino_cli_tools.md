@@ -1,5 +1,5 @@
 # arduino_mk的使用方法
-## 1.安装必须的程序  
+## 1.安装及使用过程
 `sudo apt-get install arduino arduino-mk`  
 `mkdir blink_test`  
 `cd blink_test`  
