@@ -1,4 +1,4 @@
 # 英语单词缩写
 ********
-rc run configure  
+**rc** run configure  
 
