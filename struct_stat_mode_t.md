@@ -2,8 +2,8 @@
 *****
 mode_t是无符号整形。它由  
 S_IRUSR  
-S_IWUSR 
-S_IXUSR
+S_IWUSR  
+S_IXUSR  
 S_IRGRP  
 S_IWGRP  
 S_IXGRP  
