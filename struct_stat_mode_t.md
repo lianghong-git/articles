@@ -1,5 +1,24 @@
 # struct stat中的mode_t
 *****
+mode_t是无符号整形。它由
+
+S_IRUSR
+
+S_IWUSR
+
+S_IXUSR
+
+S_IRGRP
+
+S_IWGRP
+
+S_IXGRP
+
+S_IROTH
+
+S_IWOTH
+
+S_IXOTH几个按位或而的来；所得到的数为8进制
 ```c
 S_IFMT      0170000     文件类型的位遮罩  
 S_IFSOCK    0140000     socket  
