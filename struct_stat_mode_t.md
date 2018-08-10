@@ -26,4 +26,22 @@ S_IWOTH     00002       其他用户具可写入权限
 S_IXOTH     00001       其他用户具可执行权限  
 摘自《Linux C 函数库参考手册》
 ```
+图中的取值，S_IRUSR为00400，S_IWUSR为00200，在此处，按位或后的值为00600；按位或时是右对齐  
+```c
+#include<stdio.h>
+#include<unistd.h>
+#include<sys/stat.h>
+#include<fcntl.h>
+#include<stdlib.h>
 
+int main()
+{
+        struct stat bf;
+        int fd;
+        fd=open("/home",O_RDONLY);
+        fstat(fd,&bf);
+        printf("/home %o\n",bf.st_mode);
+        exit(0);
+}
+```
+在本人电脑中，目录/home的权限为-rwxr-xr-x，即为八进制755，运行程序，以%o八进制输出st_mode，最终得到40755，对照上面标志位的值，结果是正确的，第一位的4是说明当前文件为目录，对应的标志位值为S_IFDIR     0040000  目录
