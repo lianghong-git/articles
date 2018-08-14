@@ -2,13 +2,6 @@
 ********
 **rc** run configure  
 **texmf** texm metafont  
-**TDS**  TeX Directory Structure  
+**TDS**  TeX Directory Structure  latex
 **usr** Unix System Resource  
-**usr** Unix System Resource  
-**usr** Unix System Resource  
-**usr** Unix System Resource  
-**usr** Unix System Resource  
-**usr** Unix System Resource  
-**usr** Unix System Resource  
-**usr** Unix System Resource  
-
+**asm** Architecture Specific Macros  /usr/include/asm  
