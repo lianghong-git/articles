@@ -44,6 +44,7 @@
 #include <stdlib.h>//标准库  
 #include <unistd.h>  
 #include <sys/ioctl.h>//IO控制  
+
 头文件主目录include  
 头文件目录中总共有32个.h头文件。其中主目录下有13个，asm子目录中有4个，linux子目录中有10个，sys子目录中有5个。这些头文件各自的功能如下，具体的作用和所包含的信息请参见第14章。  
 <a.out.h>：a.out头文件，定义了a.out执行文件格式和一些宏。  
@@ -59,6 +60,7 @@
 <time.h>：时间类型头文件，主要定义了tm结构和一些有关时间的函数原形。  
 <unistd.h>：Linux标准头文件，定义了各种符号常数和类型，并声明了各种函数。如，定义了__LIBRARY__，则还包括系统调用号和内嵌汇编_syscall0()等。  
 <utime.h>：用户时间头文件，定义了访问和修改时间结构以及utime()原型。  
+
 （1）体系结构相关头文件子目录include/asm  
 这些头文件主要定义了一些与CPU体系结构密切相关的数据结构、宏函数和变量。共4个文件。  
 <asm/io.h>：I/O头文件，以宏的嵌入汇编程序形式定义对I/O端口操作的函数。  
@@ -83,4 +85,5 @@
 <sys/types.h>：类型头文件，定义了基本的系统数据类型。  
 <sys/utsname.h>：系统名称结构头文件。  
 <sys/wait.h>：等待调用头文件，定义系统调用wait()和waitpid()及相关常数符号。  
+
 参考文章：http://blog.csdn.net/wanghanjiett/article/details/6791593  
