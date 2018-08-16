@@ -45,7 +45,7 @@
 #include <unistd.h>  
 #include <sys/ioctl.h>//IO控制  
 
-头文件主目录include  
+## 头文件主目录include  
 头文件目录中总共有32个.h头文件。其中主目录下有13个，asm子目录中有4个，linux子目录中有10个，sys子目录中有5个。这些头文件各自的功能如下，具体的作用和所包含的信息请参见第14章。  
 <a.out.h>：a.out头文件，定义了a.out执行文件格式和一些宏。  
 <const.h>：常数符号头文件，目前仅定义了i节点中i_mode字段的各标志位。  
