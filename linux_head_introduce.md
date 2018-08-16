@@ -61,13 +61,13 @@
 <unistd.h>：Linux标准头文件，定义了各种符号常数和类型，并声明了各种函数。如，定义了__LIBRARY__，则还包括系统调用号和内嵌汇编_syscall0()等。  
 <utime.h>：用户时间头文件，定义了访问和修改时间结构以及utime()原型。  
 
-（1）体系结构相关头文件子目录include/asm  
+### （1）体系结构相关头文件子目录include/asm  
 这些头文件主要定义了一些与CPU体系结构密切相关的数据结构、宏函数和变量。共4个文件。  
 <asm/io.h>：I/O头文件，以宏的嵌入汇编程序形式定义对I/O端口操作的函数。  
 <asm/memory.h>：内存拷贝头文件，含有memcpy()嵌入式汇编宏函数。  
 <asm/segment.h>：段操作头文件，定义了有关段寄存器操作的嵌入式汇编函数。  
 <asm/system.h>：系统头文件，定义了设置或修改描述符/中断门等的嵌入式汇编宏。  
-（2）Linux内核专用头文件子目录include/linux  
+### （2）Linux内核专用头文件子目录include/linux  
 <linux/config.h>：内核配置头文件，定义键盘语言和硬盘类型（HD_TYPE）可选项。  
 <linux/fdreg.h>：软驱头文件，含有软盘控制器参数的一些定义。  
 <linux/fs.h>：文件系统头文件，定义文件表结构（file,buffer_head,m_inode等）。  
@@ -79,7 +79,7 @@
 以及一些有关描述符参数设置和获取的嵌入式汇编函数宏语句。  
 <linux/sys.h>：系统调用头文件，含有72个系统调用C函数处理程序,以"sys_"开头。  
 <linux/tty.h>：tty头文件，定义了有关tty_io，串行通信方面的参数、常数。  
-（3）系统专用数据结构子目录include/sys  
+### （3）系统专用数据结构子目录include/sys  
 <sys/stat.h>： 文件状态头文件，含有文件或文件系统状态结构stat{}和常量。  
 <sys/times.h>：定义了进程中运行时间结构tms以及times()函数原型。  
 <sys/types.h>：类型头文件，定义了基本的系统数据类型。  
