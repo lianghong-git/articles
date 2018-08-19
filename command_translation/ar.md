@@ -1,4 +1,4 @@
-r-create,modify and extract from archive
+# ar-create,modify and extract from archive
 nm-list symbol from obj files -可以查看动态库中都有些什么函数
 当我们的程序中有经常使用的模块，而且这种模块在其他程序中也会用到，这时按照软件重用的思想，我们应该将它们生成库，使得以后编程可以减少开发代码量。这里介绍两个命令ar和nm，用来对库操作。
 
