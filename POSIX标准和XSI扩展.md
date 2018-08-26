@@ -70,6 +70,7 @@ POSIX 表示可移植操作系统接口（Portable Operating System Interface �
 Single UNIX Specification是POSIX.1标准的超集，定义了一些附加的接口，这些接口扩展了基本的POSIX.1规范的功能。相应的系统接口全集被称为X/Open系统接口（XSI，X/Open System Interface） ，XSI还定义了实现必须支持的POSIX.1的哪些可选部分才能认为是遵循XSI的。它们包括文件同步，存储映射文件，存储保护及线程接口。只有遵循XSI的实现才能称为UNIX操作系统。linux常用头文件如下： 
 
 POSIX标准定义的头文件  
+
 <dirent.h>        目录项  
 <fcntl.h>         文件控制  
 <fnmatch.h>    文件名匹配类型  
@@ -83,12 +84,10 @@ POSIX标准定义的头文件
 <unistd.h>    符号常量  
 <utime.h>    文件时间  
 <wordexp.h>    字符扩展类型  
-------------------
 <arpa/inet.h>    INTERNET定义  
 <net/if.h>    套接字本地接口  
 <netinet/in.h>    INTERNET地址族  
 <netinet/tcp.h>    传输控制协议定义  
--------------------------  
 <sys/mman.h>    内存管理声明  
 <sys/select.h>    Select函数  
 <sys/socket.h>    套接字借口  
@@ -98,7 +97,6 @@ POSIX标准定义的头文件
 <sys/un.h>    UNIX域套接字定义  
 <sys/utsname.h>    系统名  
 <sys/wait.h>    进程控制  
-------------------------------  
 ### POSIX定义的XSI扩展头文件  
 <cpio.h>    cpio归档值  
 <dlfcn.h>    动态链接  
