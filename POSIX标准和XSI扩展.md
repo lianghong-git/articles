@@ -83,10 +83,12 @@ Single UNIX Specification是POSIX.1标准的超集，定义了一些附加的接
 <unistd.h>    符号常量  
 <utime.h>    文件时间  
 <wordexp.h>    字符扩展类型  
+
 <arpa/inet.h>    INTERNET定义  
 <net/if.h>    套接字本地接口  
 <netinet/in.h>    INTERNET地址族  
 <netinet/tcp.h>    传输控制协议定义  
+
 <sys/mman.h>    内存管理声明  
 <sys/select.h>    Select函数  
 <sys/socket.h>    套接字借口  
@@ -96,7 +98,6 @@ Single UNIX Specification是POSIX.1标准的超集，定义了一些附加的接
 <sys/un.h>    UNIX域套接字定义  
 <sys/utsname.h>    系统名  
 <sys/wait.h>    进程控制  
-
 ##### POSIX定义的XSI扩展头文件  
 <cpio.h>    cpio归档值  
 <dlfcn.h>    动态链接  
@@ -115,6 +116,7 @@ Single UNIX Specification是POSIX.1标准的超集，定义了一些附加的接
 <ucontext.h>    用户上下文  
 <ulimit.h>    用户限制  
 <utmpx.h>    用户帐户数据库  
+
 <sys/ipc.h>    IPC(命名管道)  
 <sys/msg.h>    消息队列  
 <sys/resource.h>资源操作  
