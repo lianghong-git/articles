@@ -83,7 +83,7 @@ Single UNIX Specification是POSIX.1标准的超集，定义了一些附加的接
 <unistd.h>    符号常量  
 <utime.h>    文件时间  
 <wordexp.h>    字符扩展类型  
--------------------------  
+------------------
 <arpa/inet.h>    INTERNET定义  
 <net/if.h>    套接字本地接口  
 <netinet/in.h>    INTERNET地址族  
