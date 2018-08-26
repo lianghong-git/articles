@@ -116,7 +116,7 @@ POSIX标准定义的头文件
 <ucontext.h>    用户上下文  
 <ulimit.h>    用户限制  
 <utmpx.h>    用户帐户数据库  
---------------
+*************
 <sys/ipc.h>    IPC(命名管道)  
 <sys/msg.h>    消息队列  
 <sys/resource.h>资源操作  
