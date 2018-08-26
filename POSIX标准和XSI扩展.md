@@ -98,7 +98,7 @@ POSIX标准定义的头文件
 <sys/utsname.h>    系统名  
 <sys/wait.h>    进程控制  
 
-####### POSIX定义的XSI扩展头文件  
+##### POSIX定义的XSI扩展头文件  
 <cpio.h>    cpio归档值  
 <dlfcn.h>    动态链接  
 <fmtmsg.h>    消息显示结构  
@@ -116,7 +116,7 @@ POSIX标准定义的头文件
 <ucontext.h>    用户上下文  
 <ulimit.h>    用户限制  
 <utmpx.h>    用户帐户数据库  
------------------------------  
+---------------------------------------------------------
 <sys/ipc.h>    IPC(命名管道)  
 <sys/msg.h>    消息队列  
 <sys/resource.h>资源操作  
