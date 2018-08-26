@@ -127,7 +127,7 @@ POSIX标准定义的头文件
 <sys/timeb.h>    附加的日期和时间定义  
 <sys/uio.h>    矢量I/O操作  
 ------------------------------  
-### POSIX定义的可选头文件  
+####### POSIX定义的可选头文件  
 <aio.h>        异步I/O  
 <mqueue.h>    消息队列  
 <pthread.h>    线程  
