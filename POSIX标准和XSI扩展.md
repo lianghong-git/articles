@@ -97,6 +97,7 @@ POSIX标准定义的头文件
 <sys/un.h>    UNIX域套接字定义  
 <sys/utsname.h>    系统名  
 <sys/wait.h>    进程控制  
+
 ####### POSIX定义的XSI扩展头文件  
 <cpio.h>    cpio归档值  
 <dlfcn.h>    动态链接  
