@@ -69,7 +69,7 @@ POSIX 表示可移植操作系统接口（Portable Operating System Interface �
 
 Single UNIX Specification是POSIX.1标准的超集，定义了一些附加的接口，这些接口扩展了基本的POSIX.1规范的功能。相应的系统接口全集被称为X/Open系统接口（XSI，X/Open System Interface） ，XSI还定义了实现必须支持的POSIX.1的哪些可选部分才能认为是遵循XSI的。它们包括文件同步，存储映射文件，存储保护及线程接口。只有遵循XSI的实现才能称为UNIX操作系统。linux常用头文件如下： 
 
-### POSIX标准定义的头文件  
+POSIX标准定义的头文件  
 <dirent.h>        目录项  
 <fcntl.h>         文件控制  
 <fnmatch.h>    文件名匹配类型  
