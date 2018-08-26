@@ -67,10 +67,9 @@ POSIX 表示可移植操作系统接口（Portable Operating System Interface �
 <stropts.h>      ----------------------   XSI STREAMS接口  
 <trace.h>         ----------------------   时间跟踪    
 
-Single UNIX Specification是POSIX.1标准的超集，定义了一些附加的接口，这些接口扩展了基本的POSIX.1规范的功能。相应的系统接口全集被称为X/Open系统接口（XSI，X/Open System Interface） ，XSI还定义了实现必须支持的POSIX.1的哪些可选部分才能认为是遵循XSI的。它们包括文件同步，存储映射文件，存储保护及线程接口。只有遵循XSI的实现才能称为UNIX操作系统。linux常用头文件如下： 
-
-POSIX标准定义的头文件  
-
+Single UNIX Specification是POSIX.1标准的超集，定义了一些附加的接口，这些接口扩展了基本的POSIX.1规范的功能。相应的系统接口全集被称为X/Open系统接口（XSI，X/Open System Interface） ，XSI还定义了实现必须支持的POSIX.1的哪些可选部分才能认为是遵循XSI的。它们包括文件同步，存储映射文件，存储保护及线程接口。只有遵循XSI的实现才能称为UNIX操作系统。
+#### linux常用头文件如下： 
+##### POSIX标准定义的头文件  
 <dirent.h>        目录项  
 <fcntl.h>         文件控制  
 <fnmatch.h>    文件名匹配类型  
@@ -116,7 +115,6 @@ POSIX标准定义的头文件
 <ucontext.h>    用户上下文  
 <ulimit.h>    用户限制  
 <utmpx.h>    用户帐户数据库  
-*************
 <sys/ipc.h>    IPC(命名管道)  
 <sys/msg.h>    消息队列  
 <sys/resource.h>资源操作  
@@ -126,7 +124,6 @@ POSIX标准定义的头文件
 <sys/time.h>    时间类型  
 <sys/timeb.h>    附加的日期和时间定义  
 <sys/uio.h>    矢量I/O操作  
-------------------------------  
 ##### POSIX定义的可选头文件  
 <aio.h>        异步I/O  
 <mqueue.h>    消息队列  
