@@ -1,5 +1,5 @@
 # POSIX标准和XSI扩展  
-POSIX 表示可移植操作系统接口（Portable Operating System Interface ）。  电气和电子工程师协会（Institute of Electrical and Electronics Engineers，IEEE）  最初开发 POSIX 标准，是为了提高 UNIX 环境下应用程序的可移植性。然而，  POSIX 并不局限于 UNIX。许多其它的操作系统，例如 DEC OpenVMS 和   Microsoft Windows NT，都支持 POSIX 标准，尤其是 IEEE Std. 1003.1-1990  （1995 年修订）或 POSIX.1，POSIX.1 提供了源代码级别的 C 语言应用编程接  口（API）给操作系统的服务程序，例如读写文件。POSIX.1 已经被国际标准化  组织（International Standards Organization，ISO）所接受，被命名为   ISO/IEC 9945-1:1990 标准。  
+POSIX 表示可移植操作系统接口（Portable Operating System Interface ）。  电气和电子工程师协会（Institute of Electrical and Electronics Engineers，IEEE）  最初开发 POSIX 标准，是为了提高 UNIX 环境下应用程序的可移植性。然而，  POSIX 并不局限于 UNIX。许多其它的操作系统，例如 DEC OpenVMS 和   Microsoft Windows NT，都支持 POSIX 标准，尤其是 IEEE Std. 1003.1-1990  （1995 年修订）或 POSIX.1，POSIX.1 提供了源代码级别的 C 语言应用编程接口（API）给操作系统的服务程序，例如读写文件。POSIX.1 已经被国际标准化组织（International Standards Organization，ISO）所接受，被命名为   ISO/IEC 9945-1:1990 标准。  
 
 ### POSIX标准定义的必须的头文件(26项)  
 <dirent.h>      ----------------------   目录项  
