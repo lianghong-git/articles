@@ -6,7 +6,7 @@
 **texmf** text metafont  
 **TDS**  TeX Directory Structure  latex  
 **usr** Unix System Resource  
-**ACM** abstract control model 
+**ACM** abstract control model  
 **asm** Architecture Specific Macros  /usr/include/asm  
 0、项目名：  
 Linux -- LINUs' uniX (开个玩笑不是这样的，别当真）  
