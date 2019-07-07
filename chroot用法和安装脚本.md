@@ -12,17 +12,16 @@ chroot是操作系统级的“虚拟机”，其功能是切换程序运行时�
 * 限制资源访问  
 可以限制chroot环境中用户能使用的命令，例如：如果不想用户使用passwd命令，不要把passwd命令放到chroot环境中就行了。出与安全考虑运行在chroot中的程序建议给最小权限。  
   
-* 所需条件：  
+所需条件：  
   
-相同的内核，linux和*BSD是不同的  
-chroot需要root权限  
-一个可运行的shell  
+1.相同的内核，linux和*BSD是不同的  
+2.chroot需要root权限  
+3.一个可运行的shell  
 建立一个最小的chroot环境：  
 chroot目录是/opt/chroot,在其下面建立一个bin目录，存放shell，这里用默认的bash  
   
 mkdir  -p /opt/chroot/bin    
 拷贝bash二进制文件：  
-  
   
 cp /bin/bash /opt/chroot/bin   
 解决bash的依赖关系：  
@@ -48,14 +47,13 @@ cp $(ldd /opt/chroot/bin/bash | grep lib64 | sed -sre 's/(.+)(\/lib64\/\S+).+/\2
 chroot /opt/chroot   
 格式：  
   
-  
  chroot chroot目录 shell  
  这样就进入了chroot环境，这时只能使用pwd、cd这类bash内置的命令，没有ls、mkdir这类系统的命令，想运行哪个命令用相同的方式加入chroot环境。退出chroot环境直接exit即可。  
   
  对于简单的系统命令或软件可以这样配置，如果是nginx、python这类依赖非常复杂的软件，不建议这样做。我的做法是在centos下安装一个centos的base系统到chroot目录，大概有300多兆，在配置好环境后并精简掉没用的软件。精简要比解决依赖关系容易多了，做好这个后可以打包拿到其它linux内核的系统上使用。  
   
- 直接上脚本：`  
-  
+ 直接上脚本：  
+```sh   
  #!/bin/sh  
  #  
  # Build a chroot with a CentOS 6.6 base install.  
@@ -84,7 +82,7 @@ chroot /opt/chroot
  cp $CHROOT/etc/skel/.??* $CHROOT/root  
   
  rm -rf centos-release-6-6.*.rpm  
-  
+```  
   
 参考文章：  
   
