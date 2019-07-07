@@ -24,9 +24,9 @@ chroot目录是/opt/chroot,在其下面建立一个bin目录，存放shell，这
 拷贝bash二进制文件：  
 `cp /bin/bash /opt/chroot/bin`   
   
-解决bash的依赖关系：
-ldd /bin/bash  
-linux-vdso.so.1 => (0x00007fffd95ff000)  
+解决bash的依赖关系：  
+`ldd /bin/bash`  
+>linux-vdso.so.1 => (0x00007fffd95ff000)  
 libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00007f82a7b54000)  
 libdl.so.2 => /lib64/libdl.so.2 (0x00007f82a7950000)  
 libc.so.6 => /lib64/libc.so.6 (0x00007f82a75bb000)  
