@@ -14,13 +14,13 @@ chroot是操作系统级的“虚拟机”，其功能是切换程序运行时�
   
 所需条件：  
   
-1.相同的内核，linux和*BSD是不同的  
-2.chroot需要root权限  
-3.一个可运行的shell  
+1. 相同的内核，linux和*BSD是不同的  
+2. chroot需要root权限  
+3. 一个可运行的shell  
+
 建立一个最小的chroot环境：  
 chroot目录是/opt/chroot,在其下面建立一个bin目录，存放shell，这里用默认的bash  
-  
-mkdir  -p /opt/chroot/bin    
+`mkdir  -p /opt/chroot/bin`    
 拷贝bash二进制文件：  
   
 cp /bin/bash /opt/chroot/bin   
