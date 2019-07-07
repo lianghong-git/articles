@@ -52,7 +52,7 @@ libc.so.6 => /lib64/libc.so.6 (0x00007f82a75bb000)
  对于简单的系统命令或软件可以这样配置，如果是nginx、python这类依赖非常复杂的软件，不建议这样做。我的做法是在centos下安装一个centos的base系统到chroot目录，大概有300多兆，在配置好环境后并精简掉没用的软件。精简要比解决依赖关系容易多了，做好这个后可以打包拿到其它linux内核的系统上使用。  
   
  直接上脚本：  
-```sh   
+```bash   
  #!/bin/sh  
  #  
  # Build a chroot with a CentOS 6.6 base install.  
