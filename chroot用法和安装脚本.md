@@ -23,7 +23,8 @@ chroot目录是/opt/chroot,在其下面建立一个bin目录，存放shell，这
 `mkdir  -p /opt/chroot/bin`    
 拷贝bash二进制文件：  
   
-cp /bin/bash /opt/chroot/bin   
+`cp /bin/bash /opt/chroot/bin`   
+
 解决bash的依赖关系：  
   
 ldd /bin/bash  
