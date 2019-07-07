@@ -34,20 +34,19 @@ libc.so.6 => /lib64/libc.so.6 (0x00007f82a75bb000)
 
 整理一下格式：  
   
-ldd /opt/chroot/bin/bash|grep -o "/\(\usr\|lib\).[^ \ ]*"  
+>ldd /opt/chroot/bin/bash|grep -o "/\(\usr\|lib\).[^ \ ]*"  
 /lib64/libtinfo.so.5  
 /lib64/libdl.so.2  
 /lib64/libc.so.6  
 /lib64/ld-linux-x86-64.so.2  
+
 所有依赖的库文件都在/lib64下，在/opt/chroot目录下建立lib64目录，并将依赖的库拷贝进去：  
   
-cp $(ldd /opt/chroot/bin/bash | grep lib64 | sed -sre 's/(.+)(\/lib64\/\S+).+/\2/g') /opt/chroot/lib64/  
+`cp $(ldd /opt/chroot/bin/bash | grep lib64 | sed -sre 's/(.+)(\/lib64\/\S+).+/\2/g') /opt/chroot/lib64/`  
 运行chroot：  
-  
-chroot /opt/chroot   
+`chroot /opt/chroot`   
 格式：  
-  
- chroot chroot目录 shell  
+`chroot chroot目录 shell`  
  这样就进入了chroot环境，这时只能使用pwd、cd这类bash内置的命令，没有ls、mkdir这类系统的命令，想运行哪个命令用相同的方式加入chroot环境。退出chroot环境直接exit即可。  
   
  对于简单的系统命令或软件可以这样配置，如果是nginx、python这类依赖非常复杂的软件，不建议这样做。我的做法是在centos下安装一个centos的base系统到chroot目录，大概有300多兆，在配置好环境后并精简掉没用的软件。精简要比解决依赖关系容易多了，做好这个后可以打包拿到其它linux内核的系统上使用。  
