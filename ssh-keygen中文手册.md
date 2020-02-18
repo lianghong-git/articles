@@ -106,7 +106,7 @@ ssh-keygen 可以生成用于 Diffie-Hellman Group Exchange (DH-GEX) 协议的 g
 生成过程分为两步：  
 首先，使用一个快速且消耗内存较多的方法生成一些候选素数。然后，对这些素数进行适应性测试(消耗CPU较多)。  
 可以使用 -G 选项生成候选素数，同时使用 -b 选项制定其位数。例如：  
-\# ssh-keygen -G moduli-2048.candidates -b 2048  
+`` \# ssh-keygen -G moduli-2048.candidates -b 2048  
 默认将从指定位数范围内的一个随机点开始搜索素数，不过可以使用 -S 选项来指定这个随机点(16进制)。  
 生成一组候选数之后，接下来就需要使用 -T 选项进行适应性测试。  
 此时 ssh-keygen 将会从 stdin 读取候选素数(或者通过 -f 选项读取一个文件)，例如：  
