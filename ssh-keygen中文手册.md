@@ -11,10 +11,10 @@
 联系方式  
 由于译者水平有限，因此不能保证译文内容准确无误。如果你发现了译文中的错误(哪怕是错别字也好)，请来信指出，任何提高译文质量的建议我都将虚心接纳。  
 Email(QQ)：70171448在QQ邮箱  
-SSH-KEYGEN(1)              OpenBSD Reference Manual              SSH-KEYGEN(1)  
-名称  
+## SSH-KEYGEN(1)              OpenBSD Reference Manual              SSH-KEYGEN(1)  
+**名称**  
 ssh-keygen - 生成、管理和转换认证密钥  
-语法  
+**语法**  
 ssh-keygen [-q] [-b bits] -t type [-N new_passphrase] [-C comment] [-f output_keyfile]  
 ssh-keygen -p [-P old_passphrase] [-N new_passphrase] [-f keyfile]  
 ssh-keygen -i [-f input_keyfile]  
@@ -31,7 +31,7 @@ ssh-keygen -U reader [-f input_keyfile]
 ssh-keygen -r hostname [-f input_keyfile] [-g]  
 ssh-keygen -G output_file [-v] [-b bits] [-M memory] [-S start_point]  
 ssh-keygen -T output_file -f input_file [-v] [-a num_trials] [-W generator]  
-描述  
+**描述**  
 ssh-keygen 用于为 ssh(1)生成、管理和转换认证密钥，包括 RSA 和 DSA 两种密钥。  
 密钥类型可以用 -t 选项指定。如果没有指定则默认生成用于SSH-2的RSA密钥。  
 ssh-keygen 还可以用来产生 Diffie-Hellman group exchange (DH-GEX) 中使用的素数模数。  
@@ -101,7 +101,7 @@ RSA1的密钥文件中有一个"注释"字段，可以方便用户标识这个�
 -W generator  
 指定在为 DH-GEX 测试候选模数时想要使用的 generator  
 -y      读取OpenSSH专有格式的公钥文件，并将OpenSSH公钥显示在 stdout 上。  
-模数生成  
+**模数生成**  
 ssh-keygen 可以生成用于 Diffie-Hellman Group Exchange (DH-GEX) 协议的 groups 。  
 生成过程分为两步：  
 首先，使用一个快速且消耗内存较多的方法生成一些候选素数。然后，对这些素数进行适应性测试(消耗CPU较多)。  
@@ -115,7 +115,7 @@ ssh-keygen 可以生成用于 Diffie-Hellman Group Exchange (DH-GEX) 协议的 g
 DH generator 的值会自动选择，但是你也可以通过 -W 选项强制指定。有效的值可以是： 2, 3, 5  
 经过筛选之后的 DH groups 就可以存放到 /etc/ssh/moduli 里面了。  
 很重要的一点是这个文件必须包括不同长度范围的模数，而且通信双方双方共享相同的模数。  
-文件  
+**文件**  
 ~/.ssh/identity  
 该用户默认的 RSA1 身份认证私钥(SSH-1)。此文件的权限应当至少限制为"600"。  
 生成密钥的时候可以指定采用密语来加密该私钥(3DES)。  
@@ -139,7 +139,7 @@ ssh(1) 将在登录的时候读取这个文件。
 此文件的内容应该添加到所有 RSA 目标主机的 ~/.ssh/authorized_keys 文件中。  
 /etc/ssh/moduli  
 包含用于 DH-GEX 的 Diffie-Hellman groups 。文件的格式在 moduli(5) 手册页中描述。  
-参见  
+**参见**  
 ssh(1), ssh-add(1), ssh-agent(1), moduli(5), sshd(8)  
 The Secure Shell (SSH) Public Key File Format, RFC 4716, 2006.  
 OpenBSD 4.2                      May 31, 2007                                5  
