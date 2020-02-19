@@ -34,16 +34,21 @@ ssh-keygen -T output_file -f input_file [-v] [-a num_trials] [-W generator]
 **描述**  
 ssh-keygen 用于为 ssh(1)生成、管理和转换认证密钥，包括 RSA 和 DSA 两种密钥。  
 密钥类型可以用 -t 选项指定。如果没有指定则默认生成用于SSH-2的RSA密钥。  
+
 ssh-keygen 还可以用来产生 Diffie-Hellman group exchange (DH-GEX) 中使用的素数模数。  
 参见模数和生成小节。  
+
 一般说来，如果用户希望使用RSA或DSA认证，那么至少应该运行一次这个程序，  
 在 ~/.ssh/identity, ~/.ssh/id_dsa 或 ~/.ssh/id_rsa 文件中创建认证所需的密钥。  
 另外，系统管理员还可以用它产生主机密钥。  
+
 通常，这个程序产生一个密钥对，并要求指定一个文件存放私钥，同时将公钥存放在附加了".pub"后缀的同名文件中。  
 程序同时要求输入一个密语字符串(passphrase)，空表示没有密语(主机密钥的密语必须为空)。  
 密语和口令(password)非常相似，但是密语可以是一句话，里面有单词、标点符号、数字、空格或任何你想要的字符。  
 好的密语要30个以上的字符，难以猜出，由大小写字母、数字、非字母混合组成。密语可以用 -p 选项修改。  
+
 丢失的密语不可恢复。如果丢失或忘记了密语，用户必须产生新的密钥，然后把相应的公钥分发到其他机器上去。  
+
 RSA1的密钥文件中有一个"注释"字段，可以方便用户标识这个密钥，指出密钥的用途或其他有用的信息。  
 创建密钥的时候，注释域初始化为"user@host"，以后可以用 -c 选项修改。  
 密钥产生后，下面的命令描述了怎样处置和激活密钥。可用的选项有：  
@@ -139,7 +144,7 @@ ssh(1) 将在登录的时候读取这个文件。
 此文件的内容应该添加到所有 RSA 目标主机的 ~/.ssh/authorized_keys 文件中。  
 /etc/ssh/moduli  
 包含用于 DH-GEX 的 Diffie-Hellman groups 。文件的格式在 moduli(5) 手册页中描述。  
-**参见**  
+参见  
 ssh(1), ssh-add(1), ssh-agent(1), moduli(5), sshd(8)  
 The Secure Shell (SSH) Public Key File Format, RFC 4716, 2006.  
 OpenBSD 4.2                      May 31, 2007                                5  
