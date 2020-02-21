@@ -146,7 +146,7 @@ ssh(1) 将在登录的时候读取这个文件。
 此文件的内容应该添加到所有 RSA 目标主机的 ~/.ssh/authorized_keys 文件中。  
 /etc/ssh/moduli  
 包含用于 DH-GEX 的 Diffie-Hellman groups 。文件的格式在 moduli(5) 手册页中描述。  
-参见  
+**参见**  
 ssh(1), ssh-add(1), ssh-agent(1), moduli(5), sshd(8)  
 The Secure Shell (SSH) Public Key File Format, RFC 4716, 2006.  
 OpenBSD 4.2                      May 31, 2007                                5  
